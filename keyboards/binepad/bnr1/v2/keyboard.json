@@ -10,10 +10,15 @@
         "cols": ["A15"],
         "rows": ["A8"]
     },
+    "build": {
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50,
     "encoder": {
         "enabled": true,
         "rotary": [
-            {"pin_a": "B3", "pin_b": "B4"}
+            {"pin_a": "B3", "pin_b": "B4", "resolution": 2}
         ]
     }
 }

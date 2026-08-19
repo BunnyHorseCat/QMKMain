@@ -5,7 +5,9 @@
     "bootloader": "atmel-dfu",
     "diode_direction": "ROW2COL",
     "build": {
-        "lto": true
+        "lto": true,
+	    "debounce_type":
+    "sym_eager_pk"
     },
     "features": {
         "bootmagic": true,
@@ -23,6 +25,7 @@
         "rows": ["D3", "D2", "B3", "B2", "B1", "B0"]
     },
     "processor": "atmega32u4",
+    "debounce": 50,
     "rgb_matrix": {
         "animations": {
             "band_spiral_val": true,

@@ -16,6 +16,11 @@
         "rgb_matrix": true
     },
     "processor": "STM32L432",
+    "build": {
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50,
     "rgb_matrix": {
         "animations": {
             "band_spiral_val": true,

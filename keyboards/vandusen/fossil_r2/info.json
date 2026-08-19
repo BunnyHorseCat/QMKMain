@@ -1,0 +1,24 @@
+{
+    "manufacturer": "Carolina Mech",
+    "maintainer": "vandusen",
+    "url": "https://www.vdmfg.com/",
+    "usb": {
+        "vid": "0x524D"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "build": {
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50
+}

@@ -1,6 +1,6 @@
 {
     "manufacturer": "binepad",
-    "keyboard_name": "BNK9",
+    "keyboard_name": "Binepad BNK9",
     "maintainer": "binepad",
     "board": "GENERIC_RP_RP2040",
     "bootloader": "rp2040",
@@ -23,23 +23,35 @@
         "cols": ["GP1", "GP2", "GP3"],
         "rows": ["GP12", "GP4", "GP5", "GP6"]
     },
+    "build": {
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50,
     "processor": "RP2040",
     "rgb_matrix": {
         "animations": {
             "breathing": true,
+            "band_spiral_val": true,
             "cycle_all": true,
             "cycle_left_right": true,
-            "cycle_pinwheel": true,
             "cycle_up_down": true,
+            "rainbow_moving_chevron": true,
+            "cycle_out_in": true,
+            "cycle_out_in_dual": true,
+            "cycle_pinwheel": true,
+            "cycle_spiral": true,
+            "dual_beacon": true,
+            "rainbow_beacon": true,
             "jellybean_raindrops": true,
-            "riverflow": true,
-            "solid_reactive": true,
+            "pixel_rain": true,
+            "typing_heatmap": true,
+            "digital_rain": true,
             "solid_reactive_simple": true,
-            "solid_splash": true,
+            "solid_reactive_multiwide": true,
+            "solid_reactive_multinexus": true,
             "splash": true,
-            "starlight": true,
-            "starlight_dual_hue": true,
-            "starlight_dual_sat": true
+            "solid_splash": true
         },
         "driver": "ws2812",
         "layout": [

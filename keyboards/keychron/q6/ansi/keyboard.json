@@ -19,8 +19,10 @@
         "dip_switch": true
     },
     "build": {
-        "lto": true
-    },
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50,
     "rgb_matrix": {
         "layout": [
             {"matrix": [0, 0], "x": 0, "y": 0, "flags": 1},
