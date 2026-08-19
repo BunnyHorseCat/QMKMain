@@ -361,23 +361,25 @@ uint8_t uart_send_cmd(uint8_t cmd, uint8_t wait_ack, uint8_t delayms) {
         }
 
         case CMD_SET_NAME: {
-            Usart_Mgr.TXDBuf[3]  = 15;                                                       // data len
-            Usart_Mgr.TXDBuf[4]  = 1;                                                        // name suffix type
-            Usart_Mgr.TXDBuf[5]  = 13;                                                       // data: ble name len
-            Usart_Mgr.TXDBuf[6]  = 'N';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[7]  = 'u';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[8]  = 'P';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[9]  = 'h';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[10] = 'y';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[11] = ' ';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[12] = 'K';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[13] = 'i';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[14] = 'c';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[15] = 'k';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[16] = '7';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[17] = '5';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[18] = '-';                                                      // data: ble name
-            Usart_Mgr.TXDBuf[19] = get_checksum(Usart_Mgr.TXDBuf + 4, Usart_Mgr.TXDBuf[3]);  // sum
+            Usart_Mgr.TXDBuf[3]  = 17;
+            Usart_Mgr.TXDBuf[4]  = 1;
+            Usart_Mgr.TXDBuf[5]  = 15;
+            Usart_Mgr.TXDBuf[6]  = 'N';
+            Usart_Mgr.TXDBuf[7]  = 'u';
+            Usart_Mgr.TXDBuf[8]  = 'P';
+            Usart_Mgr.TXDBuf[9]  = 'h';
+            Usart_Mgr.TXDBuf[10] = 'y';
+            Usart_Mgr.TXDBuf[11] = ' ';
+            Usart_Mgr.TXDBuf[12] = 'A';
+            Usart_Mgr.TXDBuf[13] = 'i';
+            Usart_Mgr.TXDBuf[14] = 'r';
+            Usart_Mgr.TXDBuf[15] = '9';
+            Usart_Mgr.TXDBuf[16] = '6';
+            Usart_Mgr.TXDBuf[17] = ' ';
+            Usart_Mgr.TXDBuf[18] = 'V';
+            Usart_Mgr.TXDBuf[19] = '2';
+            Usart_Mgr.TXDBuf[20] = '-';
+            Usart_Mgr.TXDBuf[21] = get_checksum(Usart_Mgr.TXDBuf + 4, Usart_Mgr.TXDBuf[3]);
             break;
         }
 
