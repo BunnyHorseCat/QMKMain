@@ -32,6 +32,11 @@
         "scroll_lock": "B1",
         "on_state": 0
     },
+    "build": {
+	    "debounce_type":
+    "sym_eager_pk"
+	},
+    "debounce": 50,
     "community_layouts": [
         "fullsize_ansi",
         "fullsize_iso",
