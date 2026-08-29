@@ -9,9 +9,9 @@
         "rows": ["GP27", "GP28", "GP29", "GP24", "GP26", "GP25"]
     },
     "indicators": {
-        "caps_lock": "GP12",
-        "num_lock": "GP17",
-        "scroll_lock": "GP16",
+        "caps_lock": "GP17",
+        "num_lock": "GP16",
+        "scroll_lock": "GP12",
         "on_state": 1
     },
     "layouts": {
