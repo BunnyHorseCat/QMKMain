@@ -399,6 +399,21 @@ void sys_led_show(void)
     }
 }
 
+// Num Lock → cyan on side strip.
+void num_led_show(void)
+{
+    if (dev_info.link_mode == LINK_USB) {
+        if (host_keyboard_led_state().num_lock) {
+            set_right_rgb(0X00, SIDE_BLINK_LIGHT, SIDE_BLINK_LIGHT);
+        }
+    }
+    else {
+        if (dev_info.rf_led & 0x02) {
+            set_right_rgb(0X00, SIDE_BLINK_LIGHT, SIDE_BLINK_LIGHT);
+        }
+    }
+}
+
 // Advances an animation cursor (*point) by `step` within a cyclic
 // table of length `len`. trend: 1 = forward, 0 = backward.
 static void light_point_playing(uint8_t trend, uint8_t step, uint8_t len, uint8_t *point)
@@ -857,6 +872,7 @@ void m_side_led_show(void)
 
     bat_led_show();
     sys_led_show();
+    num_led_show();
     sys_sw_led_show();
     sleep_sw_led_show();
     side_flash_show();
