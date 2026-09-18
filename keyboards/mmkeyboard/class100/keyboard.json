@@ -103,6 +103,9 @@
                 "hue_breathing": true,
                 "hue_pendulum": true,
                 "hue_wave": true,
+                "pixel_rain": true,
+                "pixel_flow": true,
+                "pixel_fractal": true,
                 "typing_heatmap": true,
                 "solid_reactive_simple": true,
                 "solid_reactive": true,
@@ -122,30 +125,7 @@
                 "starlight_dual_sat": true
             },
         
-            "layout": [
-                {"matrix": [0, 15], "x": 50, "y": 0, "flags": 8},
-                {"matrix": [0, 14], "x": 62, "y": 0, "flags": 8},
-                {"matrix": [0, 13], "x": 75, "y": 0, "flags": 8},
-                {"matrix": [4, 20], "x": 0, "y": 1, "flags": 4},
-                {"matrix": [4, 19], "x": 12, "y": 1, "flags": 4},
-                {"matrix": [4, 18], "x": 25, "y": 1, "flags": 4},
-                {"matrix": [4, 17], "x": 37, "y": 1, "flags": 4},
-                {"matrix": [4, 15], "x": 50, "y": 1, "flags": 4},
-                {"matrix": [4, 13], "x": 62, "y": 1, "flags": 4},
-                {"matrix": [4, 12], "x": 75, "y": 1, "flags": 4},
-                {"matrix": [4, 11], "x": 87, "y": 1, "flags": 4},
-                {"matrix": [4, 10], "x": 110, "y": 1, "flags": 4},
-                {"matrix": [4, 9], "x": 112, "y": 1, "flags": 4},
-                {"matrix": [4, 8], "x": 125, "y": 1, "flags": 4},
-                {"matrix": [4, 7], "x": 137, "y": 1, "flags": 4},
-                {"matrix": [4, 6], "x": 150, "y": 1, "flags": 4},
-                {"matrix": [4, 5], "x": 162, "y": 1, "flags": 4},
-                {"matrix": [4, 4], "x": 175, "y": 1, "flags": 4},
-                {"matrix": [4, 3], "x": 187, "y": 1, "flags": 4},
-                {"matrix": [4, 2], "x": 200, "y": 1, "flags": 4},
-                {"matrix": [4, 1], "x": 212, "y": 1, "flags": 4},
-                {"matrix": [4, 0], "x": 224, "y": 1, "flags": 4}
-        ],
+
     "led_count": 22
     },
 
